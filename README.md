@@ -29,7 +29,7 @@ java -jar target/rollback-service-1.0-SHAPSHOT.jar
 cd user-service
 java -jar target/user-service-1.0-SHAPSHOT.jar
 ```
-
+##Create user
 Open Postman - send POST request http://localhost:8081/user/save?txId=1  
 (txId - number transaction)
 For Example:
@@ -40,8 +40,10 @@ For Example:
     "email" : "aaa@gmail.com"
 }
 ```
-
-If Update user: 
+##Update user
+Open Postman - send POST request http://localhost:8081/user/update?txId=1  
+(txId - number transaction)
+For Example:
 
 ```
 {
