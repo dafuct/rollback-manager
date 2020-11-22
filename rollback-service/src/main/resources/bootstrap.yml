@@ -1,7 +1,8 @@
 spring:
   application:
-    name: user-service
+    name: rollback-service
   cloud:
     config:
       uri: http://localhost:8888
       name: ${spring.application.name}
+

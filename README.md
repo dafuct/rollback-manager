@@ -11,6 +11,11 @@ java -jar target/eureka-server-1.0-SHAPSHOT.jar
 
 //open new window terminal or cmd
 // from folder 'rollback-manager' run 
+cd config-server
+java -jar target/config-server-1.0-SHAPSHOT.jar
+
+//open new window terminal or cmd
+// from folder 'rollback-manager' run 
 cd gateway
 java -jar target/gateway-1.0-SHAPSHOT.jar
 

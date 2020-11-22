@@ -1,3 +1,5 @@
+server:
+  port: 8888
 spring:
   application:
     name: config-server
@@ -5,11 +7,7 @@ spring:
     config:
       server:
         git:
-          uri: ${CONFIG_URI}../config
-          clone-on-start: true
-
-server:
-  port: 8888
+          uri: https://github.com/dafuct/config-repo.git
 
 eureka:
   client:
